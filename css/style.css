@@ -1,0 +1,634 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    position: relative;
+
+    background: black;
+    animation: sky-change;
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+    animation-delay: 6s;
+}
+@keyframes sky-change {
+    0% {
+        background: black;
+    }
+    50% {
+        background: skyblue;
+        box-shadow: 0 -400px 300px -300px steelblue inset;
+    }
+
+    100%{
+        background: steelblue;
+        box-shadow: 0 -400px 300px -300px steelblue inset;
+    }
+}
+
+.bg{
+    position: absolute;
+    left: 49%;
+    top: 240px;
+    animation-name: ci_white;
+    opacity: 0;
+    animation-duration: 2s;
+    animation-timing-function: ease;
+    animation-iteration-count: 1;
+    animation-delay: 5.7s;
+    animation-fill-mode: forwards;
+}
+@keyframes ci_white {
+    0%{
+        opacity: 0;
+        top: 240px;
+        background: none;
+       left: 49%;
+    }
+        50%{
+            opacity: 100;
+            top: 240px;
+            left: 49%;
+        }
+    100%{
+        opacity: 100;
+        top: 40px;
+       left: 55%;
+    }
+}
+@media (max-width: 540px) {
+    .bg{
+        opacity: 0;
+        top: 240px;
+        background: none;
+        left: 46%;
+    }
+    @keyframes ci_white {
+        0%{
+            opacity: 0;
+            top: 240px;
+            background: none;
+            left: 46%;
+        }
+        50%{
+            opacity: 100;
+            top: 240px;
+            left: 46%;
+        }
+        100%{
+            opacity: 100;
+            top: 40px;
+            left: 55%;
+        }
+    }
+}
+.one{
+    animation-name:ci_white2;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-delay: 2s;
+    Animation-direction:alternate;
+    animation-fill-mode: forwards;
+    opacity: 100;
+    width: 70px;
+    height: 70px;
+    background-color: yellow;
+    border-radius: 50%;
+}
+
+@keyframes ci_white2 {
+    0%{
+        opacity: 100;
+        -webkit-box-shadow: 0px 0px 33px 3px rgba(255, 247, 0, 0.54);
+        -moz-box-shadow: 0px 0px 33px 3px rgba(255, 247, 0, 0.54);
+        box-shadow: 0px 0px 33px 3px rgba(255, 247, 0, 0.54);
+    }
+
+    50%{
+        opacity: 100;
+        -webkit-box-shadow: 0px 0px 33px 14px rgba(255, 247, 0, 0.73);
+        -moz-box-shadow: 0px 0px 33px 14px rgba(255, 247, 0, 0.73);
+        box-shadow: 0px 0px 33px 14px rgba(255, 247, 0, 0.73);
+    }
+    100%{
+        opacity: 100;
+        -webkit-box-shadow: 0px 0px 33px 3px rgba(255, 247, 0, 0.54);
+        -moz-box-shadow: 0px 0px 33px 3px rgba(255, 247, 0, 0.54);
+        box-shadow: 0px 0px 33px 3px rgba(255, 247, 0, 0.54);
+    }
+}
+.j{
+    position: absolute;
+    bottom: 330px;
+    width: 100%;
+    animation-name: Juli;
+    animation-duration: 1s;
+    opacity: 0;
+    animation-delay: 6s;
+    animation-fill-mode: forwards;
+}
+.j img{
+  position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    margin-right: auto;
+    margin-left: auto;
+
+}
+
+@keyframes Juli {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 100;
+    }
+}
+
+.k{
+   position: relative;
+}
+.k img{
+    position: absolute;
+    width: 120px;
+    top: 590px;
+    left: 80%;
+    animation-name: k_juli;
+    animation-duration: 2s;
+    animation-delay: 8s;
+    animation-fill-mode: forwards;
+}
+.derevo{
+    overflow: hidden;
+}
+.derevo img{
+    position: absolute;
+    left: -200px;
+    bottom: 0;
+}
+.derevo_two{
+    overflow: hidden!important;
+
+}
+
+.oblaka{
+    opacity: 0;
+    animation-name: oblako;
+    animation-duration: 2s;
+    animation-delay: 7s;
+    animation-fill-mode: forwards;
+
+}
+
+@keyframes oblako{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 100;
+    }
+}
+
+.derevo_two img{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+}
+.ob_one img{
+    position: absolute;
+    top: 86px;
+    left: 98px;
+    width: 80px;
+    animation-name: oblako_one;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    Animation-direction:alternate;
+}
+@keyframes oblako_one {
+    0%{
+        top: 86px;
+        left: 98px;
+        width: 80px;
+    }
+    100%{
+        top: 86px;
+        left: 80px;
+        width: 70px;
+    }
+}
+.ob_two img{
+    position: absolute;
+    width: 100px;
+    top: 15px;
+    left: 24px;
+    animation-name: oblako_two;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    Animation-direction:alternate;
+}
+@keyframes oblako_two {
+    0%{
+        top: 15px;
+        left: 24px;
+    }
+    100%{
+        top: 15px;
+        left: 32px;
+    }
+}
+.derevo, .derevo_two{
+    opacity: 0;
+    animation-name: derevo;
+    animation-duration: 2s;
+    animation-delay: 5.9s;
+    animation-fill-mode: forwards;
+}
+@keyframes derevo {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 100;
+    }
+}
+@keyframes k_juli {
+    0%{
+        top: 590px;
+        left: 80%;
+    }
+    50%{
+        top: 304px;
+        left: 48%;
+    }
+    100%{
+        top: 304px;
+        left: 48%;
+        opacity: 0;
+    }
+}
+
+@media (max-width: 540px) {
+    @keyframes k_juli {
+        0%{
+            top: 590px;
+            left: 80%;
+        }
+        50%{
+            top: 304px;
+            left: 41%;
+        }
+        100%{
+            top: 304px;
+            left: 41%;
+            opacity: 0;
+        }
+    }
+
+}
+
+.k_two{
+    position: relative;
+}
+.k_two img{
+    position: absolute;
+    top: 320px;
+    left: 49%;
+    animation-name: k_two;
+    animation-duration: 2s;
+    animation-delay: 9s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+@keyframes k_two {
+    0%{
+        opacity: 0;
+        top: 320px;
+        left: 49%;
+    }
+    50%{
+        opacity: 100;
+        top: 375px;
+    }
+    100%{
+        opacity: 100;
+        top: 375px;
+        left: 50%;
+    }
+}
+@media (max-width: 540px) {
+        .k_two img{
+            top: 308px;
+            left: 46%;
+            animation-name: k_two;
+        }
+
+    @keyframes k_two {
+        0%{
+            top: 308px;
+            left: 46%;
+        }
+        50%{
+            top: 375px;
+        }
+        100%{
+            opacity: 100;
+            top: 375px;
+            left: 50%;
+        }
+    }
+}
+
+
+.text{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    opacity: 0;
+    animation-name: text_tt;
+    animation-duration: 6s;
+    animation-delay: 1s;
+}
+
+@keyframes text_tt {
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 100;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+
+.text h1{
+    position: absolute;
+    font-family: Roboto;
+    top: 150px;
+    font-size: 70px;
+}
+
+.one_t{
+    color: sienna;
+    -webkit-text-stroke: 2px sienna;
+}
+.two_t{
+    color: darkorange;
+    animation: animate 4s ease-in-out infinite alternate;
+}
+
+@keyframes animate {
+    0%, 100%{
+        clip-path: polygon(0% 46%, 21% 63%, 41% 57%, 62% 42%, 79% 45%, 92% 53%, 100% 69%, 100% 100%, 1% 100%);
+    }
+    50%{
+        clip-path: polygon(0% 46%, 21% 39%, 39% 42%, 63% 54%, 74% 59%, 85% 59%, 100% 48%, 100% 100%, 1% 100%);
+    }
+}
+
+@media (max-width: 540px) {
+    .text h1{
+        font-size: 35px;
+    }
+}
+.bg_fon{
+    position: relative;
+    top: 169px;
+    right: 266px;
+
+}
+
+
+.text_two{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    opacity: 0;
+    animation-name: text_two;
+    animation-duration: 6s;
+    animation-delay: 7s;
+}
+
+@keyframes text_two {
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 100;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+
+.text_two h1{
+    position: absolute;
+    font-family: Roboto;
+    top: 150px;
+    font-size: 23px;
+}
+
+.text_two .one_t{
+    color: sienna;
+    -webkit-text-stroke: 2px sienna;
+}
+.text_two .two_t{
+    color: darkorange;
+    animation: animate_two 4s ease-in-out infinite alternate;
+}
+
+@keyframes animate_two {
+    0%, 100%{
+        clip-path: polygon(0% 46%, 21% 63%, 41% 57%, 62% 42%, 79% 45%, 92% 53%, 100% 69%, 100% 100%, 1% 100%);
+    }
+    50%{
+        clip-path: polygon(0% 46%, 21% 39%, 39% 42%, 63% 54%, 74% 59%, 85% 59%, 100% 48%, 100% 100%, 1% 100%);
+    }
+}
+
+
+.text_three{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    opacity: 0;
+    animation-name: text_three;
+    animation-duration: 3s;
+    animation-delay: 14s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes text_three {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 100;
+    }
+}
+
+.text_three h1{
+    position: absolute;
+    font-family: Roboto;
+    top: 150px;
+    font-size: 24px;
+}
+
+.text_three .one_t{
+    color: sienna;
+    -webkit-text-stroke: 2px sienna;
+}
+.text_three .two_t{
+    color: darkorange;
+    animation: animate_three 4s ease-in-out infinite alternate;
+}
+
+@keyframes animate_three {
+    0%, 100%{
+        clip-path: polygon(0% 46%, 21% 63%, 41% 57%, 62% 42%, 79% 45%, 92% 53%, 100% 69%, 100% 100%, 1% 100%);
+    }
+    50%{
+        clip-path: polygon(0% 46%, 21% 39%, 39% 42%, 63% 54%, 74% 59%, 85% 59%, 100% 48%, 100% 100%, 1% 100%);
+    }
+}
+
+
+.trava_one{
+    position: absolute;
+    right: 0;
+    bottom: 20px;
+}
+.trava_two{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    transform: scale(-1, 1);
+    z-index: 100;
+
+}
+.trava_three{
+    position: absolute;
+    bottom: 0;
+    transform: scale(-1, 1)
+}
+.trava_foure{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+.trava_foure img{
+    position: relative;
+  top: 5px;
+}
+.kor_one img{
+    position: absolute;
+    bottom: 0;
+}
+@media (max-width: 540px) {
+    .kor_one img{
+        right: 0;
+    }
+}
+.kor_two img{
+    position: absolute;
+    bottom: 0px;
+}
+
+
+
+.trava_foure{
+
+    position: absolute;
+    bottom: 0;
+}
+
+.trava{
+    opacity: 0;
+    animation-name: trava;
+    animation-duration: 2s;
+    animation-delay: 6s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes trava {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 100;
+    }
+}
+
+.pchely{
+    overflow: hidden;
+}
+
+
+.pchely_one img{
+    position: absolute;
+    top: 400px;
+    left: -30px;
+    width: 21.5px;
+    animation-name: pchely_one;
+    animation-duration: 8s;
+    animation-delay: 12s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes pchely_one {
+    0%{
+        top: 400px;
+        left: -30px;
+        transform: scale(1, 1)
+    }
+
+    50%{
+        top: 400px;
+        left: 91%;
+        transform: scale(1, 1)
+    }
+    55%{
+        transform: scale(-1, 1)
+    }
+    100%{
+        top: 400px;
+        left: -30px;
+        transform: scale(-1, 1)
+    }
+}
+.pchely_two img{
+    position: absolute;
+    top: 200px;
+    left: -30px;
+    width: 20px;
+    animation-name: pchely_two;
+    animation-duration: 8s;
+    animation-delay: 16s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes pchely_two {
+    0%{
+        top: 200px;
+        left: -30px;
+        transform: scale(1, 1)
+    }
+    50%{
+        top: 200px;
+        left: 92%;
+        transform: scale(1, 1)
+    }
+    55%{
+        transform: scale(-1, 1)
+    }
+    100%{
+        top: 200px;
+        left: -30px;
+        transform: scale(-1, 1)
+    }
+}
